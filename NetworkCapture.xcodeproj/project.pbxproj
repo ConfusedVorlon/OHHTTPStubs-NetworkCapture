@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		67FF5CAD86295BBBDB99EE9C /* libPods-NetworkCapture.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0003966581548027DE7C42C6 /* libPods-NetworkCapture.a */; };
+		BCA1BC083916C23FFBCBE215 /* libPods-NetworkCaptureTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA46673A335CE8CBD815C6D /* libPods-NetworkCaptureTests.a */; };
+		D43174FD1A32092800FDF26B /* OHHTTPStubsResponse+HS.m in Sources */ = {isa = PBXBuildFile; fileRef = D43174F71A32092800FDF26B /* OHHTTPStubsResponse+HS.m */; };
+		D43174FE1A32092800FDF26B /* OHHTTPStubsResponse.test.m in Sources */ = {isa = PBXBuildFile; fileRef = D43174F91A32092800FDF26B /* OHHTTPStubsResponse.test.m */; };
+		D43174FF1A32092800FDF26B /* testResponse.data in Resources */ = {isa = PBXBuildFile; fileRef = D43174FA1A32092800FDF26B /* testResponse.data */; };
+		D43175001A32092800FDF26B /* testResponse.headers in Resources */ = {isa = PBXBuildFile; fileRef = D43174FB1A32092800FDF26B /* testResponse.headers */; };
+		D43175011A32092800FDF26B /* testResponse.status in Resources */ = {isa = PBXBuildFile; fileRef = D43174FC1A32092800FDF26B /* testResponse.status */; };
+		D43175031A320DF700FDF26B /* errorResponse.error in Resources */ = {isa = PBXBuildFile; fileRef = D43175021A320DF700FDF26B /* errorResponse.error */; };
+		D46D46CC1A2F87BA00472FAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D46D46CB1A2F87BA00472FAF /* AppDelegate.m */; };
+		D46D46CE1A2F87BA00472FAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D46D46CD1A2F87BA00472FAF /* main.m */; };
+		D46D46D01A2F87BA00472FAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D46D46CF1A2F87BA00472FAF /* Images.xcassets */; };
+		D46D46D31A2F87BA00472FAF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D46D46D11A2F87BA00472FAF /* MainMenu.xib */; };
+		D46D46EA1A2F883300472FAF /* Downloader.m in Sources */ = {isa = PBXBuildFile; fileRef = D46D46E91A2F883300472FAF /* Downloader.m */; };
+		D46D489C1A30D05300472FAF /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = D46D489B1A30D05300472FAF /* AppIcon.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D46D46D91A2F87BA00472FAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D46D46BD1A2F87BA00472FAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D46D46C41A2F87BA00472FAF;
+			remoteInfo = NetworkCapture;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0003966581548027DE7C42C6 /* libPods-NetworkCapture.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetworkCapture.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D92655679FEABD43760ABB9 /* Pods-NetworkCapture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkCapture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkCapture/Pods-NetworkCapture.debug.xcconfig"; sourceTree = "<group>"; };
+		2960E5AD66D0C6D0DC7B7C24 /* Pods-NetworkCapture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkCapture.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkCapture/Pods-NetworkCapture.release.xcconfig"; sourceTree = "<group>"; };
+		3FA46673A335CE8CBD815C6D /* libPods-NetworkCaptureTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetworkCaptureTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B4E0329CDBB0D9139A5C376 /* Pods-NetworkCaptureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkCaptureTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkCaptureTests/Pods-NetworkCaptureTests.release.xcconfig"; sourceTree = "<group>"; };
+		BAC33C200DE4B04AF4EB7A56 /* Pods-NetworkCaptureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkCaptureTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkCaptureTests/Pods-NetworkCaptureTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D43174F61A32092800FDF26B /* OHHttpStubsResponse+HS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OHHttpStubsResponse+HS.h"; sourceTree = "<group>"; };
+		D43174F71A32092800FDF26B /* OHHTTPStubsResponse+HS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OHHTTPStubsResponse+HS.m"; sourceTree = "<group>"; };
+		D43174F91A32092800FDF26B /* OHHTTPStubsResponse.test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHHTTPStubsResponse.test.m; sourceTree = "<group>"; };
+		D43174FA1A32092800FDF26B /* testResponse.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testResponse.data; sourceTree = "<group>"; };
+		D43174FB1A32092800FDF26B /* testResponse.headers */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testResponse.headers; sourceTree = "<group>"; };
+		D43174FC1A32092800FDF26B /* testResponse.status */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testResponse.status; sourceTree = "<group>"; };
+		D43175021A320DF700FDF26B /* errorResponse.error */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = errorResponse.error; sourceTree = "<group>"; };
+		D46D46C51A2F87BA00472FAF /* NetworkCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D46D46C91A2F87BA00472FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D46D46CA1A2F87BA00472FAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D46D46CB1A2F87BA00472FAF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D46D46CD1A2F87BA00472FAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D46D46CF1A2F87BA00472FAF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D46D46D21A2F87BA00472FAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D46D46D81A2F87BA00472FAF /* NetworkCaptureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkCaptureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D46D46DD1A2F87BA00472FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D46D46E81A2F883300472FAF /* Downloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Downloader.h; sourceTree = "<group>"; };
+		D46D46E91A2F883300472FAF /* Downloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Downloader.m; sourceTree = "<group>"; };
+		D46D46F11A2F9C8100472FAF /* NetworkCapture_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCapture_Prefix.pch; sourceTree = "<group>"; };
+		D46D489B1A30D05300472FAF /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D46D46C21A2F87BA00472FAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67FF5CAD86295BBBDB99EE9C /* libPods-NetworkCapture.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D46D46D51A2F87BA00472FAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA1BC083916C23FFBCBE215 /* libPods-NetworkCaptureTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CF3E46D93F2B26423E3F75B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0003966581548027DE7C42C6 /* libPods-NetworkCapture.a */,
+				3FA46673A335CE8CBD815C6D /* libPods-NetworkCaptureTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D43174F51A32092800FDF26B /* OHHTTPStubs+HS */ = {
+			isa = PBXGroup;
+			children = (
+				D43174F61A32092800FDF26B /* OHHttpStubsResponse+HS.h */,
+				D43174F71A32092800FDF26B /* OHHTTPStubsResponse+HS.m */,
+				D43174F81A32092800FDF26B /* OHHTTPStubsResponseTest */,
+			);
+			path = "OHHTTPStubs+HS";
+			sourceTree = "<group>";
+		};
+		D43174F81A32092800FDF26B /* OHHTTPStubsResponseTest */ = {
+			isa = PBXGroup;
+			children = (
+				D43174F91A32092800FDF26B /* OHHTTPStubsResponse.test.m */,
+				D43175021A320DF700FDF26B /* errorResponse.error */,
+				D43174FA1A32092800FDF26B /* testResponse.data */,
+				D43174FB1A32092800FDF26B /* testResponse.headers */,
+				D43174FC1A32092800FDF26B /* testResponse.status */,
+			);
+			path = OHHTTPStubsResponseTest;
+			sourceTree = "<group>";
+		};
+		D46D46BC1A2F87BA00472FAF = {
+			isa = PBXGroup;
+			children = (
+				D43174F51A32092800FDF26B /* OHHTTPStubs+HS */,
+				D46D46EF1A2F9C8100472FAF /* Config */,
+				D46D46C71A2F87BA00472FAF /* NetworkCapture */,
+				D46D46DB1A2F87BA00472FAF /* NetworkCaptureTests */,
+				D46D46C61A2F87BA00472FAF /* Products */,
+				EE293A82E30B2F38C5A71580 /* Pods */,
+				9CF3E46D93F2B26423E3F75B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D46D46C61A2F87BA00472FAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D46D46C51A2F87BA00472FAF /* NetworkCapture.app */,
+				D46D46D81A2F87BA00472FAF /* NetworkCaptureTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D46D46C71A2F87BA00472FAF /* NetworkCapture */ = {
+			isa = PBXGroup;
+			children = (
+				D46D46CA1A2F87BA00472FAF /* AppDelegate.h */,
+				D46D46CB1A2F87BA00472FAF /* AppDelegate.m */,
+				D46D46E81A2F883300472FAF /* Downloader.h */,
+				D46D46E91A2F883300472FAF /* Downloader.m */,
+				D46D46CF1A2F87BA00472FAF /* Images.xcassets */,
+				D46D46D11A2F87BA00472FAF /* MainMenu.xib */,
+				D46D46C81A2F87BA00472FAF /* Supporting Files */,
+			);
+			path = NetworkCapture;
+			sourceTree = "<group>";
+		};
+		D46D46C81A2F87BA00472FAF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D46D489B1A30D05300472FAF /* AppIcon.icns */,
+				D46D46C91A2F87BA00472FAF /* Info.plist */,
+				D46D46CD1A2F87BA00472FAF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D46D46DB1A2F87BA00472FAF /* NetworkCaptureTests */ = {
+			isa = PBXGroup;
+			children = (
+				D46D46DC1A2F87BA00472FAF /* Supporting Files */,
+			);
+			path = NetworkCaptureTests;
+			sourceTree = "<group>";
+		};
+		D46D46DC1A2F87BA00472FAF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D46D46DD1A2F87BA00472FAF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D46D46EF1A2F9C8100472FAF /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D46D46F11A2F9C8100472FAF /* NetworkCapture_Prefix.pch */,
+			);
+			name = Config;
+			path = NetworkCapture/Config;
+			sourceTree = "<group>";
+		};
+		EE293A82E30B2F38C5A71580 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D92655679FEABD43760ABB9 /* Pods-NetworkCapture.debug.xcconfig */,
+				2960E5AD66D0C6D0DC7B7C24 /* Pods-NetworkCapture.release.xcconfig */,
+				BAC33C200DE4B04AF4EB7A56 /* Pods-NetworkCaptureTests.debug.xcconfig */,
+				8B4E0329CDBB0D9139A5C376 /* Pods-NetworkCaptureTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D46D46C41A2F87BA00472FAF /* NetworkCapture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D46D46E21A2F87BA00472FAF /* Build configuration list for PBXNativeTarget "NetworkCapture" */;
+			buildPhases = (
+				AF48061F26871B667C9005C5 /* Check Pods Manifest.lock */,
+				D46D46C11A2F87BA00472FAF /* Sources */,
+				D46D46C21A2F87BA00472FAF /* Frameworks */,
+				D46D46C31A2F87BA00472FAF /* Resources */,
+				9E2EBBC12D353A9450EE4A8D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkCapture;
+			productName = NetworkCapture;
+			productReference = D46D46C51A2F87BA00472FAF /* NetworkCapture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D46D46D71A2F87BA00472FAF /* NetworkCaptureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D46D46E51A2F87BA00472FAF /* Build configuration list for PBXNativeTarget "NetworkCaptureTests" */;
+			buildPhases = (
+				BAC03C13EE5603BDA894EAE3 /* Check Pods Manifest.lock */,
+				D46D46D41A2F87BA00472FAF /* Sources */,
+				D46D46D51A2F87BA00472FAF /* Frameworks */,
+				D46D46D61A2F87BA00472FAF /* Resources */,
+				196E1AC4478F42C70F999BC5 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D46D46DA1A2F87BA00472FAF /* PBXTargetDependency */,
+			);
+			name = NetworkCaptureTests;
+			productName = NetworkCaptureTests;
+			productReference = D46D46D81A2F87BA00472FAF /* NetworkCaptureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D46D46BD1A2F87BA00472FAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = HobbyistSoftware;
+				TargetAttributes = {
+					D46D46C41A2F87BA00472FAF = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					D46D46D71A2F87BA00472FAF = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = D46D46C41A2F87BA00472FAF;
+					};
+				};
+			};
+			buildConfigurationList = D46D46C01A2F87BA00472FAF /* Build configuration list for PBXProject "NetworkCapture" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D46D46BC1A2F87BA00472FAF;
+			productRefGroup = D46D46C61A2F87BA00472FAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D46D46C41A2F87BA00472FAF /* NetworkCapture */,
+				D46D46D71A2F87BA00472FAF /* NetworkCaptureTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D46D46C31A2F87BA00472FAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D46D46D01A2F87BA00472FAF /* Images.xcassets in Resources */,
+				D46D46D31A2F87BA00472FAF /* MainMenu.xib in Resources */,
+				D46D489C1A30D05300472FAF /* AppIcon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D46D46D61A2F87BA00472FAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D43175031A320DF700FDF26B /* errorResponse.error in Resources */,
+				D43174FF1A32092800FDF26B /* testResponse.data in Resources */,
+				D43175011A32092800FDF26B /* testResponse.status in Resources */,
+				D43175001A32092800FDF26B /* testResponse.headers in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		196E1AC4478F42C70F999BC5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetworkCaptureTests/Pods-NetworkCaptureTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E2EBBC12D353A9450EE4A8D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetworkCapture/Pods-NetworkCapture-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF48061F26871B667C9005C5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BAC03C13EE5603BDA894EAE3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D46D46C11A2F87BA00472FAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D46D46CE1A2F87BA00472FAF /* main.m in Sources */,
+				D46D46CC1A2F87BA00472FAF /* AppDelegate.m in Sources */,
+				D46D46EA1A2F883300472FAF /* Downloader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D46D46D41A2F87BA00472FAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D43174FD1A32092800FDF26B /* OHHTTPStubsResponse+HS.m in Sources */,
+				D43174FE1A32092800FDF26B /* OHHTTPStubsResponse.test.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D46D46DA1A2F87BA00472FAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D46D46C41A2F87BA00472FAF /* NetworkCapture */;
+			targetProxy = D46D46D91A2F87BA00472FAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D46D46D11A2F87BA00472FAF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D46D46D21A2F87BA00472FAF /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D46D46E01A2F87BA00472FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D46D46E11A2F87BA00472FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D46D46E31A2F87BA00472FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D92655679FEABD43760ABB9 /* Pods-NetworkCapture.debug.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREFIX_HEADER = NetworkCapture/Config/NetworkCapture_Prefix.pch;
+				INFOPLIST_FILE = NetworkCapture/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D46D46E41A2F87BA00472FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2960E5AD66D0C6D0DC7B7C24 /* Pods-NetworkCapture.release.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREFIX_HEADER = NetworkCapture/Config/NetworkCapture_Prefix.pch;
+				INFOPLIST_FILE = NetworkCapture/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D46D46E61A2F87BA00472FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAC33C200DE4B04AF4EB7A56 /* Pods-NetworkCaptureTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NetworkCaptureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkCapture.app/Contents/MacOS/NetworkCapture";
+			};
+			name = Debug;
+		};
+		D46D46E71A2F87BA00472FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B4E0329CDBB0D9139A5C376 /* Pods-NetworkCaptureTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NetworkCaptureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkCapture.app/Contents/MacOS/NetworkCapture";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D46D46C01A2F87BA00472FAF /* Build configuration list for PBXProject "NetworkCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D46D46E01A2F87BA00472FAF /* Debug */,
+				D46D46E11A2F87BA00472FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D46D46E21A2F87BA00472FAF /* Build configuration list for PBXNativeTarget "NetworkCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D46D46E31A2F87BA00472FAF /* Debug */,
+				D46D46E41A2F87BA00472FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D46D46E51A2F87BA00472FAF /* Build configuration list for PBXNativeTarget "NetworkCaptureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D46D46E61A2F87BA00472FAF /* Debug */,
+				D46D46E71A2F87BA00472FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D46D46BD1A2F87BA00472FAF /* Project object */;
+}
