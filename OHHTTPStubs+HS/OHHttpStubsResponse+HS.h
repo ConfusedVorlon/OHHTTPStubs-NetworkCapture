@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "OHHTTPStubsResponse.h"
+#import "OHHTTPStubs.h"
 
 @interface OHHTTPStubsResponse(HS)
 
