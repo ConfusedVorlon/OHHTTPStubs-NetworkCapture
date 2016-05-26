@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		67FF5CAD86295BBBDB99EE9C /* libPods-NetworkCapture.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0003966581548027DE7C42C6 /* libPods-NetworkCapture.a */; };
 		BCA1BC083916C23FFBCBE215 /* libPods-NetworkCaptureTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA46673A335CE8CBD815C6D /* libPods-NetworkCaptureTests.a */; };
-		D43174FD1A32092800FDF26B /* OHHTTPStubsResponse+HS.m in Sources */ = {isa = PBXBuildFile; fileRef = D43174F71A32092800FDF26B /* OHHTTPStubsResponse+HS.m */; };
+		D43174FD1A32092800FDF26B /* OHHTTPStubsResponse+HS.m in Sources */ = {isa = PBXBuildFile; fileRef = D43174F71A32092800FDF26B /* OHHTTPStubsResponse+HS.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		D43174FE1A32092800FDF26B /* OHHTTPStubsResponse.test.m in Sources */ = {isa = PBXBuildFile; fileRef = D43174F91A32092800FDF26B /* OHHTTPStubsResponse.test.m */; };
 		D43174FF1A32092800FDF26B /* testResponse.data in Resources */ = {isa = PBXBuildFile; fileRef = D43174FA1A32092800FDF26B /* testResponse.data */; };
 		D43175001A32092800FDF26B /* testResponse.headers in Resources */ = {isa = PBXBuildFile; fileRef = D43174FB1A32092800FDF26B /* testResponse.headers */; };
@@ -243,7 +243,7 @@
 		D46D46BD1A2F87BA00472FAF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = HobbyistSoftware;
 				TargetAttributes = {
 					D46D46C41A2F87BA00472FAF = {
@@ -423,6 +423,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -483,10 +484,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D92655679FEABD43760ABB9 /* Pods-NetworkCapture.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PREFIX_HEADER = NetworkCapture/Config/NetworkCapture_Prefix.pch;
 				INFOPLIST_FILE = NetworkCapture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HobbyistSoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -495,10 +498,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2960E5AD66D0C6D0DC7B7C24 /* Pods-NetworkCapture.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PREFIX_HEADER = NetworkCapture/Config/NetworkCapture_Prefix.pch;
 				INFOPLIST_FILE = NetworkCapture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HobbyistSoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -508,6 +513,7 @@
 			baseConfigurationReference = BAC33C200DE4B04AF4EB7A56 /* Pods-NetworkCaptureTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -519,6 +525,7 @@
 				);
 				INFOPLIST_FILE = NetworkCaptureTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HobbyistSoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkCapture.app/Contents/MacOS/NetworkCapture";
 			};
@@ -529,6 +536,7 @@
 			baseConfigurationReference = 8B4E0329CDBB0D9139A5C376 /* Pods-NetworkCaptureTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -536,6 +544,7 @@
 				);
 				INFOPLIST_FILE = NetworkCaptureTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HobbyistSoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkCapture.app/Contents/MacOS/NetworkCapture";
 			};

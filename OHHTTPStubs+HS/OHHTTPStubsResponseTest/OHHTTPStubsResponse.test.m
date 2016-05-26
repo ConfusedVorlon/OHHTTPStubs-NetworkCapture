@@ -53,7 +53,7 @@
                                              
                                              XCTAssertEqualObjects(@"*", accessControl,@"header has access control");
                                              
-                                             NSString *responseString=[[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
+                                             NSString *responseString=[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
                                              NSRange range=[responseString rangeOfString:@"This a test page"
                                                                                  options:NSLiteralSearch];
                                              

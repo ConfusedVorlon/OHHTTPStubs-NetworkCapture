@@ -13,17 +13,13 @@
 
 @interface Downloader ()
 
-@property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSWindow *window;
 
 @end
 
 
 @implementation Downloader
 
-- (void)dealloc
-{
-    [super dealloc];
-}
 
 - (IBAction)download:(id)sender
 {

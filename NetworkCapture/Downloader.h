@@ -10,9 +10,9 @@
 
 @interface Downloader : NSObject <NSURLConnectionDelegate>
 
-@property (retain) NSString *urlString;
+@property (strong) NSString *urlString;
 @property (assign) BOOL allowInvalidSSL;
-@property (retain) NSString *username;
-@property (retain) NSString *password;
+@property (strong) NSString *username;
+@property (strong) NSString *password;
 
 @end

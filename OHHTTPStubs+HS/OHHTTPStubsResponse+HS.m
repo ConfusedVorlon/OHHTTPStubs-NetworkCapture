@@ -6,8 +6,14 @@
 //
 //
 
+#if !__has_feature(objc_arc)
+#error requires ARC
+#endif
+
+
 #import "OHHTTPStubsResponse+HS.h"
 #import <XCTest/XCTest.h>
+
 
 @implementation OHHTTPStubsResponse (HS)
 
@@ -29,7 +35,7 @@
         
         NSData *status=[self testBundleResourceName:name type:@"status"];
         NSAssert(status, @"no status for response: %@",name);
-        NSString *statusString=[[[NSString alloc] initWithData:status encoding:NSUTF8StringEncoding] autorelease];
+        NSString *statusString=[[NSString alloc] initWithData:status encoding:NSUTF8StringEncoding];
         int statusCode=[statusString intValue];
         
         NSData *headers=[self testBundleResourceName:name type:@"headers"];
@@ -72,7 +78,6 @@
     NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
     NSError *error = [unarchiver decodeObjectForKey:@"NSError"];
     [unarchiver finishDecoding];
-    [unarchiver release];
     
     return error;
 }
